@@ -1,0 +1,52 @@
+<div ng-if="tour">
+
+<div>
+  <label>Tour name:
+    <input #tourName name="tourName" ngModel placeholder="name"/>
+  </label>
+</div>
+
+<div>
+  <label>termin:
+    <input #tourTermin name="tourTermin" ngModel placeholder="termin"/>
+  </label>
+</div>
+
+<div>
+  <label>location:
+    <input #tourLocation name="tourLocation" ngModel placeholder="location"/>
+  </label>
+</div>
+
+<div>
+  <label>resort:
+    <input #tourResort name="tourResort" ngModel placeholder="resort"/>
+  </label>
+</div>
+
+<div>
+<label>coordinators:
+  <input #tourCoordinators name="tourCoordinators" ngModel placeholder="coordinators"/>
+</label>
+</div>
+
+<div>
+  <label>schedule:
+    <input #tourSchedule name="tourSchedule" ngModel placeholder="schedule"/>
+  </label>
+</div>
+
+</div>
+
+
+<button (click)="goBack()">go back</button>
+
+
+<button (click)="save(tourName.value, tourTermin.value,
+tourLocation.value,
+tourResort.value,
+tourCoordinators.value,
+tourSchedule.value);
+tourName.value=''">save</button>
+
+

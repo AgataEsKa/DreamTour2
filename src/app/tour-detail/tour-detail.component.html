@@ -1,0 +1,23 @@
+<div *ngIf="tour">
+  <h2>{{ tour.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{tour.id}}</div>
+
+  <div><span>name: </span>{{tour.name}}</div>
+
+  <div><span>termin: </span>{{tour.termin}}</div>
+
+  <div><span>location: </span>{{tour.location}}</div>
+
+  <div><span>resort: </span>{{tour.resort}}</div>
+
+  <div><span>coordinators: </span>{{tour.coordinators}}</div>
+
+  <div><span>schedule: </span>{{tour.schedule}}</div>
+
+
+
+  <button (click)="goBack()">go back</button>
+
+  <button *ngIf="logged" (click)="updateTour()">edit</button>
+
+</div>
